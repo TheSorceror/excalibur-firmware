@@ -116,8 +116,8 @@
 
 /*********************** CHASSIS CONFIGURATION ***********************/
 // CHASSIS WHEELS PID VALUES
-#define CHASSIS_KP  			12
-#define CHASSIS_KI  			0.1
+#define CHASSIS_KP  			11
+#define CHASSIS_KI  			0.3
 #define CHASSIS_KD  			0
 #define CHASSIS_INT_MAX  		1000
 #define CHASSIS_MAX_CURRENT 	6000
@@ -153,15 +153,15 @@
  * the motors
  */
 /*********************** GIMBAL CONFIGURATION ***********************/
-#define PITCH_ANGLE_KP	  		0
-#define PITCH_ANGLE_KI  		0
-#define PITCH_ANGLE_KD  		0
+#define PITCH_ANGLE_KP	  		35
+#define PITCH_ANGLE_KI  		0.5
+#define PITCH_ANGLE_KD  		8
 #define PITCH_ANGLE_INT_MAX		0.1
 #define PITCH_MAX_RPM			60
 
-#define PITCHRPM_KP				0
-#define PITCHRPM_KI				0
-#define PITCHRPM_KD				0
+#define PITCHRPM_KP				35
+#define PITCHRPM_KI				0.5
+#define PITCHRPM_KD				8
 #define PITCHRPM_INT_MAX		10
 #define PITCH_MAX_CURRENT		20000
 
@@ -171,16 +171,16 @@
 #define PITCH_MIN_ANG			-0.50
 #define PITCH_CONST 			0
 
-#define YAW_ANGLE_KP			0
-#define YAW_ANGLE_KI			0
-#define YAW_ANGLE_KD			0
+#define YAW_ANGLE_KP			150
+#define YAW_ANGLE_KI			0.3
+#define YAW_ANGLE_KD			10
 #define YAW_ANGLE_INT_MAX		0.05
 #define YAW_MAX_RPM				85
 #define YAW_SPINSPIN_CONSTANT	5000
 
-#define YAWRPM_KP				0
-#define YAWRPM_KI				0
-#define YAWRPM_KD				0
+#define YAWRPM_KP				150
+#define YAWRPM_KI				0.3
+#define YAWRPM_KD				10
 #define YAWRPM_INT_MAX			200
 #define YAW_MAX_CURRENT			20000
 
@@ -214,7 +214,7 @@
 #define PITCH_MOTOR_ID 			8
 #define PITCH_MOTOR_CAN_PTR		&hcan1
 #ifndef CHASSIS_MCU
-#define YAW_MOTOR_ID 		    23
+#define YAW_MOTOR_ID 		    23 // 23
 #define YAW_MOTOR_CAN_PTR		&hcan2
 #endif
 
