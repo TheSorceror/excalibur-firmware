@@ -115,6 +115,12 @@ void referee_processing_task(void *argument) {
 						ref_mag_data_txno++;
 						break;
 					// add your code here !!
+					case REF_ROBOT_POWER_DATA_CMD_ID:
+						memcpy(&ref_power_data, &g_ref_msg_buffer.data,
+								sizeof(ref_robot_power_data_t));
+						ref_power_data_txno++;
+						break;
+
 					default:
 						break;
 					/* todo: 6. Get data from the referee system
