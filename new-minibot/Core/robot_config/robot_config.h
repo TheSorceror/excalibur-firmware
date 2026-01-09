@@ -45,7 +45,7 @@
 #define KEY_OFFSET_SHIFT    ((uint16_t)0x01<<4)
 #define KEY_OFFSET_CTRL     ((uint16_t)0x01<<5)
 
-#define CHASSIS_SPINSPIN_MAX	0.01 // spinspin constant
+#define CHASSIS_SPINSPIN_MAX	1 // spinspin constant
 
 #endif /* TASKS_INC_ROBOT_CONFIG_H_ */
 

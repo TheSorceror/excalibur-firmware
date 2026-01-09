@@ -125,15 +125,15 @@
 #define BUFFER_MIN				0.22		// power buffer minimum, at zero buffer left, motors will draw CHASSIS_MAX_CURRENT * BUFFER_MIN
 											//tune this by seeing if pilot likes the speed
 #define CHASSIS_CAN_SPINSPIN
-#define CHASSIS_YAW_MAX_RPM		0.75		//max RPM for chassis centering
-#define CHASSIS_YAW_KP 			3.5
+#define CHASSIS_YAW_MAX_RPM		0.75 // 0.75		//max RPM for chassis centering
+#define CHASSIS_YAW_KP 			3
 #define CHASSIS_YAW_KI			0
-#define CHASSIS_YAW_KD 			0.3
+#define CHASSIS_YAW_KD 			0.1
 #define CHASSIS_YAW_MIN			0.1
 
 #define REF_POWER_LIM
 #define MIN_SPEED				2000
-#define MAX_SPEED 				9000		//M3508_MAX_RPM  //Max speed of robot
+#define MAX_SPEED 				3500 // 9000		//M3508_MAX_RPM  //Max speed of robot
 #define LVL_MAX_SPEED			10
 #define CHASSIS_POWER_KP		0.2
 
@@ -184,7 +184,7 @@
 #define YAWRPM_INT_MAX			200
 #define YAW_MAX_CURRENT			20000
 
-#define YAW_CENTER 				0
+#define YAW_CENTER 				369
 #define YAW_MAX_ANG				5*PI
 #define YAW_MIN_ANG				5*-PI
 
@@ -193,13 +193,13 @@
 //ADD 4 TO GM6020 IDS i.e. flashing 5 times = ID 9
 //#define CHASSIS_MCU
 #ifndef CHASSIS_MCU
-#define FR_MOTOR_ID 			15
+#define FR_MOTOR_ID 			16
 #define FR_MOTOR_CAN_PTR		&hcan2
-#define FL_MOTOR_ID 			14
+#define FL_MOTOR_ID 			15
 #define FL_MOTOR_CAN_PTR		&hcan2
-#define BL_MOTOR_ID 			13
+#define BL_MOTOR_ID 			14
 #define BL_MOTOR_CAN_PTR		&hcan2
-#define BR_MOTOR_ID 			16
+#define BR_MOTOR_ID 			13
 #define BR_MOTOR_CAN_PTR		&hcan2
 #endif
 #define FEEDER_MOTOR_ID			7
