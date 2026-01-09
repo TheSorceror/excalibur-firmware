@@ -153,13 +153,13 @@
  * the motors
  */
 /*********************** GIMBAL CONFIGURATION ***********************/
-#define PITCH_ANGLE_KP	  		250
+#define PITCH_ANGLE_KP	  		150
 #define PITCH_ANGLE_KI  		0
 #define PITCH_ANGLE_KD  		12
 #define PITCH_ANGLE_INT_MAX		0.1
 #define PITCH_MAX_RPM			60
 
-#define PITCHRPM_KP				400
+#define PITCHRPM_KP				300
 #define PITCHRPM_KI				0
 #define PITCHRPM_KD				15
 #define PITCHRPM_INT_MAX		10
