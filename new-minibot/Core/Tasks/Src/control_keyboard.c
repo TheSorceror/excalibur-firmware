@@ -70,7 +70,7 @@ void keyboard_chassis_input() {
 
 			// todo: 5. Spinspin logic, make the chassis spin!
 			if (g_spinspin_mode) {
-				yaw_input = g_spinspin_mode;
+				yaw_input = g_spinspin_mode * CHASSIS_SPINSPIN_MAX;
 			} else {
 				//center yaw motor such that yaw motor = 0
 				yaw_input = chassis_center_yaw();

@@ -20,8 +20,8 @@
 
 //if no overrides in the respective configs
 #ifndef CONTROL_DEFAULT
-//#define CONTROL_DEFAULT 		KEYBOARD_CTRL_MODE
-#define CONTROL_DEFAULT			REMOTE_CTRL_MODE
+#define CONTROL_DEFAULT 		KEYBOARD_CTRL_MODE
+//#define CONTROL_DEFAULT			REMOTE_CTRL_MODE
 //#define CONTROL_DEFAULT			SBC_CTRL_MODE
 
 #endif
@@ -44,6 +44,8 @@
 #define KEY_OFFSET_E        ((uint16_t)0x01<<7)
 #define KEY_OFFSET_SHIFT    ((uint16_t)0x01<<4)
 #define KEY_OFFSET_CTRL     ((uint16_t)0x01<<5)
+
+#define CHASSIS_SPINSPIN_MAX	0.01 // spinspin constant
 
 #endif /* TASKS_INC_ROBOT_CONFIG_H_ */
 

@@ -107,7 +107,7 @@
 #define FRICTION_KD  			0
 #define FRICTION_MAX_CURRENT 	16384
 #define FRICTION_MAX_INT		10000
-#define FRICTION_INVERT			-1
+#define FRICTION_INVERT			-1 // 1
 #define LAUNCHER_MARGIN			300
 #define LAUNCHER_DIFF_MARGIN	300
 #define FRICTION_OFFSET			0
@@ -116,7 +116,7 @@
 
 /*********************** CHASSIS CONFIGURATION ***********************/
 // CHASSIS WHEELS PID VALUES
-#define CHASSIS_KP  			3
+#define CHASSIS_KP  			2.5
 #define CHASSIS_KI  			0
 #define CHASSIS_KD  			0.3
 #define CHASSIS_INT_MAX  		1000
@@ -137,7 +137,7 @@
 #define LVL_MAX_SPEED			10
 #define CHASSIS_POWER_KP		0.2
 
-#define CHASSIS_MAX_POWER 		400
+#define CHASSIS_MAX_POWER 		120 // 400
 #define CHASSIS_POWER_MARGIN 	0
 //#define CHASSIS_POWER_BUFFER_LIMITER
 #define CHASSIS_POWER_LPF 		0.1         // filter for chassis power readout from referee system
@@ -171,14 +171,14 @@
 #define PITCH_MIN_ANG			-0.50
 #define PITCH_CONST 			0
 
-#define YAW_ANGLE_KP			120
+#define YAW_ANGLE_KP			80
 #define YAW_ANGLE_KI			0
-#define YAW_ANGLE_KD			30
+#define YAW_ANGLE_KD			25
 #define YAW_ANGLE_INT_MAX		0.05
 #define YAW_MAX_RPM				85
 #define YAW_SPINSPIN_CONSTANT	5000
 
-#define YAWRPM_KP				75
+#define YAWRPM_KP				55
 #define YAWRPM_KI				0
 #define YAWRPM_KD				3
 #define YAWRPM_INT_MAX			200
@@ -204,9 +204,9 @@
 #endif
 #define FEEDER_MOTOR_ID			7
 #define FEEDER_MOTOR_CAN_PTR	&hcan1
-#define LFRICTION_MOTOR_ID		6
+#define LFRICTION_MOTOR_ID		5
 #define LFRICTION_MOTOR_CAN_PTR	&hcan1
-#define RFRICTION_MOTOR_ID		5
+#define RFRICTION_MOTOR_ID		6
 #define RFRICTION_MOTOR_CAN_PTR	&hcan1
 
 //NOTE: two motors CANNOT have the same __flashing__ number (i.e. GM6020 id 9 cannot be used
