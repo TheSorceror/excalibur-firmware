@@ -171,18 +171,18 @@
 #define PITCH_MIN_ANG			-0.50
 #define PITCH_CONST 			0
 
-#define YAW_ANGLE_KP			80
+#define YAW_ANGLE_KP		    85
 #define YAW_ANGLE_KI			0
-#define YAW_ANGLE_KD			25
+#define YAW_ANGLE_KD		    8
 #define YAW_ANGLE_INT_MAX		0.05
-#define YAW_MAX_RPM				85
+#define YAW_MAX_RPM				85// 85
 #define YAW_SPINSPIN_CONSTANT	5000
 
-#define YAWRPM_KP				55
+#define YAWRPM_KP				350
 #define YAWRPM_KI				0
-#define YAWRPM_KD				3
+#define YAWRPM_KD			    14
 #define YAWRPM_INT_MAX			200
-#define YAW_MAX_CURRENT			20000
+#define YAW_MAX_CURRENT			15000 // 20000
 
 #define YAW_CENTER 				369
 #define YAW_MAX_ANG				5*PI
@@ -202,7 +202,7 @@
 #define BR_MOTOR_ID 			13
 #define BR_MOTOR_CAN_PTR		&hcan2
 #endif
-#define FEEDER_MOTOR_ID			7
+#define FEEDER_MOTOR_ID			7 // 7
 #define FEEDER_MOTOR_CAN_PTR	&hcan1
 #define LFRICTION_MOTOR_ID		5
 #define LFRICTION_MOTOR_CAN_PTR	&hcan1
@@ -214,7 +214,7 @@
 #define PITCH_MOTOR_ID 			8
 #define PITCH_MOTOR_CAN_PTR		&hcan1
 #ifndef CHASSIS_MCU
-#define YAW_MOTOR_ID 		    23 // 23
+#define YAW_MOTOR_ID 		    23 // blinking ID seven - changed to physical CAN1
 #define YAW_MOTOR_CAN_PTR		&hcan2
 #endif
 
