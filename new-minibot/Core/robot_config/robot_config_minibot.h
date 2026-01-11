@@ -69,9 +69,9 @@
 
 /*********************** LAUNCHER CONFIGURATION ***********************/
 #define FEEDER_SPEED			1200
-#define	PROJECTILE_SPEED		20.5
+#define	PROJECTILE_SPEED		18.0
 
-#define PROJECTILE_SPEED_RATIO	360	//rpm per m/s of the friction wheels ish don't think this will work well lmao
+#define PROJECTILE_SPEED_RATIO	350	//rpm per m/s of the friction wheels ish don't think this will work well lmao
 #define FEEDER_SPEED_RATIO		8	//projectiles per round of the feeder
 
 // prevents pilots from overheating when firing
@@ -133,7 +133,7 @@
 
 #define REF_POWER_LIM
 #define MIN_SPEED				2000
-#define MAX_SPEED 				3500 // 9000		//M3508_MAX_RPM  //Max speed of robot
+#define MAX_SPEED 				4000 // old one - 3500		//M3508_MAX_RPM  //Max speed of robot
 #define LVL_MAX_SPEED			10
 #define CHASSIS_POWER_KP		0.2
 

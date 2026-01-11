@@ -156,6 +156,13 @@ void gimbal_control(motor_data_t *pitch_motor, motor_data_t *yaw_motor) {
 	}
 	xSemaphoreTake(gimbal_ctrl_data.yaw_semaphore,portMAX_DELAY);
 	gimbal_ctrl_data.delta_yaw -= turn_ang;
+	if (abs(gimbal_ctrl_data.delta_yaw) > 0.9) {
+			if (gimbal_ctrl_data.delta_yaw > 0) {
+				gimbal_ctrl_data.delta_yaw = 0.9;
+			} else {
+				gimbal_ctrl_data.delta_yaw = -0.9;
+			}
+		}
 	yangle_pid(gimbal_ctrl_data.delta_yaw, 0, yaw_motor,
 			imu_heading.yaw, &prev_yaw,0);
 	xSemaphoreGive(gimbal_ctrl_data.yaw_semaphore);
